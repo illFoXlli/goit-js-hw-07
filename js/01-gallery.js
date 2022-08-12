@@ -32,10 +32,14 @@ divGallery.addEventListener("click", noGalleryClick);
 function noGalleryClick(eve) {
  eve.preventDefault();
  document.addEventListener("keydown", onListenerEscapeKeydown);
- const srcBigImages = eve.target.dataset.fox;
+   const srcBigImages = eve.target.dataset.fox;
+   
+
  const bigImges = basicLightbox.create(`
     <img src="${srcBigImages}" >
 `);
+   
+   
    
    bigImges.show();
    
